@@ -36,8 +36,11 @@
       },
       "permissions": [
         "android.permission.CAMERA",
+        "android.permission.NFC",
+        "android.permission.CAMERA",
         "android.permission.NFC"
-      ]
+      ],
+      "package": "com.bitphantom.qrnfcreader"
     },
     "experiments": {
       "typedRoutes": true
