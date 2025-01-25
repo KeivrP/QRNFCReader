@@ -50,6 +50,12 @@
         "projectId": "a9840d5b-23e0-4a4a-b6ae-605def99609b"
       }
     },
-    "owner": "bitphantom"
+    "owner": "bitphantom",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/a9840d5b-23e0-4a4a-b6ae-605def99609b"
+    }
   }
 }
