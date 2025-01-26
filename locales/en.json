@@ -1,0 +1,20 @@
+{
+  "login": {
+    "title": "Authentication",
+    "nfcScan": "Scan NFC",
+    "qrScan": "Scan QR Code",
+    "success": "Authentication Successful"
+  },
+  "tabs": {
+    "home": "Home",
+    "profile": "Profile"
+  },
+
+  "start": {
+    "title": "Bring your device closer\nto start",
+    "subtitle": "or choose another option"
+  },
+  "common": {
+    "qr_button": "Scan QR"
+  }
+}

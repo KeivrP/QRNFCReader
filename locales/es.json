@@ -1,0 +1,20 @@
+{
+    "login": {
+      "title": "Autenticación",
+      "nfcScan": "Escanear NFC",
+      "qrScan": "Escanear Código QR",
+      "success": "Autenticación Exitosa"
+    },
+    "tabs": {
+      "home": "Inicio",
+      "profile": "Perfil"
+    },
+    "start": {
+      "title": "Acerca tu dispositivo\npara comenzar",
+      "subtitle": "o elige otra opción"
+    },
+    "common": {
+      "qr_button": "Escanear QR"
+    }
+  }
+  
