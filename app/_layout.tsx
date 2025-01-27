@@ -20,8 +20,7 @@ export { ErrorBoundary } from 'expo-router';
 SplashScreen.preventAutoHideAsync();
 
 export default function RootLayout() {
- 
-  /*   const colorScheme = useColorScheme(); */
+
   const [loaded, error] = useFonts({
     "Poppins-Light": require('../assets/fonts/Poppins-Light.ttf'),
   });
@@ -41,22 +40,22 @@ export default function RootLayout() {
   }
 
   return (
-      <GestureHandlerRootView style={{ flex: 1 }}>
-            <I18nextProvider i18n={i18n}>
+    <GestureHandlerRootView style={{ flex: 1 }}>
+      <I18nextProvider i18n={i18n}>
 
         <SafeAreaProvider>
           <BottomSheetModalProvider>
             <AuthProvider>
-              
-                <ThemeProvider value={DefaultTheme}>
-                  <Slot />
-                  <Toast />
-                </ThemeProvider>
+
+              <ThemeProvider value={DefaultTheme}>
+                <Slot />
+                <Toast />
+              </ThemeProvider>
 
             </AuthProvider>
           </BottomSheetModalProvider>
         </SafeAreaProvider>
-        </I18nextProvider>
-      </GestureHandlerRootView>
+      </I18nextProvider>
+    </GestureHandlerRootView>
   )
 }

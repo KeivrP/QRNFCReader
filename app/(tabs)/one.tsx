@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React  from 'react';
 
 import { StatusBar } from 'expo-status-bar';
 import BalanceCard from '@/components/home/BalanceCard';

@@ -1,9 +1,14 @@
 import React from 'react';
-import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity,Image } from 'react-native';
 import { Fontisto, MaterialIcons } from '@expo/vector-icons';
-import { Image } from 'react-native';
 
-const ProfileHeader = ({ userName, onMenuPress, onNotificationPress }) => {
+interface ProfileHeaderProps {
+    userName: string;
+    onMenuPress: () => void;
+    onNotificationPress: () => void;
+}
+
+const ProfileHeader: React.FC<ProfileHeaderProps> = ({ userName, onMenuPress, onNotificationPress }) => {
     return (
         <View style={styles.header}>
             {/* Parte izquierda: Avatar y nombre */}
@@ -12,7 +17,8 @@ const ProfileHeader = ({ userName, onMenuPress, onNotificationPress }) => {
                     <Image
                         source={{ uri: 'https://avatar.iran.liara.run/public/15' }}
                         style={styles.profileImage}
-                    />           </TouchableOpacity>
+                    />
+                </TouchableOpacity>
                 <View style={styles.greetingContainer}>
                     <Text style={styles.greetingText}>Hola</Text>
                     <Text style={styles.userName}>{userName}</Text>
