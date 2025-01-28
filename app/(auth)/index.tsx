@@ -68,7 +68,7 @@ export default function TabTwoScreen() {
     <>
       <StatusBar style="dark" />
       <LinearGradient
-        colors={["#FFE5E5", "#E5F0FF", "#F5F5F5"]}
+        colors={["#efe8e2", "#efe8e2", "#efe8e2"]}
         style={styles.container}
         start={{ x: 0, y: 0 }}
         end={{ x: 1, y: 1 }}
@@ -86,7 +86,7 @@ export default function TabTwoScreen() {
                 style={[
                   {
                     position: 'absolute',
-                    backgroundColor: '#FFB3B3',
+                    backgroundColor: '#c6925e',
                     borderRadius: 16,
                     width: 80,
                     height: 80
@@ -98,7 +98,7 @@ export default function TabTwoScreen() {
                 style={[
                   {
                     position: 'absolute',
-                    backgroundColor: '#FFB3B3',
+                    backgroundColor: '#c6925e',
                     borderRadius: 16,
                     width: 80,
                     height: 80
@@ -112,7 +112,7 @@ export default function TabTwoScreen() {
                 style={{
                   width: 80,
                   height: 80,
-                  backgroundColor: '#FFB3B3',
+                  backgroundColor: '#c6925e',
                   borderRadius: 16,
                   shadowColor: '#000',
                   shadowOffset: { width: 0, height: 2 },
@@ -124,7 +124,7 @@ export default function TabTwoScreen() {
                 }}
               >
                 <View style={{ width: 48, height: 48, justifyContent: 'center', alignItems: 'center' }}>
-                  <Svg viewBox="0 0 24 24" width={48} height={48} fill="none" stroke="white" strokeWidth={3}>
+                  <Svg viewBox="0 0 24 24" width={48} height={48} fill="none" stroke="#0d0f0b" strokeWidth={3}>
                     <Path d="M12 2v20M17 5v14M7 5v14M2 8v8M22 8v8" strokeLinecap="round" />
                   </Svg>
                 </View>

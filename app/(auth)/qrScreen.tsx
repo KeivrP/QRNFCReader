@@ -3,7 +3,7 @@ import { Text, View, StyleSheet, TouchableOpacity, Alert, Animated } from 'react
 import { FontAwesome6 } from '@expo/vector-icons';
 import { useFocusEffect, useRouter } from 'expo-router';
 import { heightPercentageToDP, widthPercentageToDP } from 'react-native-responsive-screen';
-import { QRScanner } from '@/components/qr/qrScanner';
+import { QRScanner } from '../../components/qr/qrScanner';
 import { StatusBar } from 'expo-status-bar';
 import { LinearGradient } from 'expo-linear-gradient';
 import GalleryQRReader from '@/components/qr/GalleryQrUpload';
@@ -52,7 +52,7 @@ const QrScreen = () => {
         <>
             <StatusBar style="dark" />
             <LinearGradient
-                colors={["#FFE5E5", "#E5F0FF", "#F5F5F5"]}
+                colors={["#efe8e2", "#efe8e2", "#efe8e2"]}
                 style={{ flex: 1 }}
                 start={{ x: 0, y: 0 }}
                 end={{ x: 1, y: 1 }}
@@ -65,7 +65,7 @@ const QrScreen = () => {
                         <Animated.View style={[styles.scanFrame, { transform: [{ translateY }] }]}>
                             <View style={styles.scanLine} />
                         </Animated.View>
-                        
+
                         <Text style={styles.instructions}>
                             Enfoca el código QR dentro del marco
                         </Text>
@@ -74,12 +74,12 @@ const QrScreen = () => {
 
                 {/* Footer con controles */}
                 <View style={styles.footer}>
-                    <GalleryQRReader onScan={(e) => setData(e)}/>
-                    <TouchableOpacity 
-                        style={[styles.actionButton, { backgroundColor: '#FF6B6B' }]}
+                    <GalleryQRReader onScan={(e) => setData(e)} />
+                    <TouchableOpacity
+                        style={[styles.actionButton, { backgroundColor: '#c6925e' }]}
                         onPress={() => route.back()}
                     >
-                        <FontAwesome6 name="xmark" size={24} color="#FFF" />
+                        <FontAwesome6 name="xmark" size={24} color="#0f0d0b" />
                     </TouchableOpacity>
                 </View>
             </LinearGradient>
@@ -105,20 +105,20 @@ const styles = StyleSheet.create({
         width: 250,
         height: 250,
         borderWidth: 2,
-        borderColor: '#FF6B6B',
+        borderColor: '#c6925e',
         borderRadius: 24,
         backgroundColor: 'rgba(255, 107, 107, 0.1)',
     },
     scanLine: {
         height: 0,
         width: '100%',
-        backgroundColor: '#FF6B6B',
+        backgroundColor: '#c6925e',
         opacity: 0.8,
     },
     instructions: {
         position: 'absolute',
         bottom: 40,
-        color: '#FFF',
+        color: '#0f0d0b',
         fontSize: 16,
         textShadowColor: 'rgba(0, 0, 0, 0.3)',
         textShadowOffset: { width: 1, height: 1 },
@@ -131,7 +131,7 @@ const styles = StyleSheet.create({
         paddingBottom: 40,
     },
     actionButton: {
-        backgroundColor: '#FFB3B3',
+        backgroundColor: '#c6925e',
         width: 60,
         height: 60,
         borderRadius: 16,

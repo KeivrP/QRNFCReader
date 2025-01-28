@@ -16,5 +16,37 @@
   },
   "common": {
     "qr_button": "Scan QR"
+  }, 
+  "profile":{
+    "start":"Hello",
+    "title": "Profile",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "address": "Address",
+    "logout": "Logout"
+  },
+  "home": {
+    "title": "Home",
+    "subtitle": "Welcome to the authentication app",
+    "membership": "Membership",
+    "gold": "Gold",
+    "silver": "Silver",
+    "bronze": "Bronze",
+    "rewards": "Rewards",
+    "recharge": "Recharge",
+    "valid": "Valid until"
+  },
+  "rewards": {
+    "title": "Benefits",
+    "subtitle": "Check out the Benefits you can get",
+    "points": "Points",
+    "redeem": "Redeem",
+    "valid": "Valid until",
+    "drinks": "Drinks",
+    "snacks": "Snacks",
+    "packs": "Beach Packages"
+
+
   }
 }

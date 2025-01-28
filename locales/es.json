@@ -1,20 +1,49 @@
 {
-    "login": {
-      "title": "Autenticación",
-      "nfcScan": "Escanear NFC",
-      "qrScan": "Escanear Código QR",
-      "success": "Autenticación Exitosa"
-    },
-    "tabs": {
-      "home": "Inicio",
-      "profile": "Perfil"
-    },
-    "start": {
-      "title": "Acerca tu dispositivo\npara comenzar",
-      "subtitle": "o elige otra opción"
-    },
-    "common": {
-      "qr_button": "Escanear QR"
-    }
+  "login": {
+    "title": "Autenticación",
+    "nfcScan": "Escanear NFC",
+    "qrScan": "Escanear Código QR",
+    "success": "Autenticación Exitosa"
+  },
+  "tabs": {
+    "home": "Inicio",
+    "profile": "Perfil"
+  },
+  "start": {
+    "title": "Acerca tu dispositivo\npara comenzar",
+    "subtitle": "o elige otra opción"
+  },
+  "common": {
+    "qr_button": "Escanear QR"
+  },
+  "profile": {
+    "start": "Hola",
+    "title": "Perfil",
+    "name": "Nombre",
+    "email": "Correo",
+    "phone": "Teléfono",
+    "address": "Dirección",
+    "logout": "Cerrar Sesión"
+  },
+  "home": {
+    "title": "Inicio",
+    "subtitle": "Bienvenido a la aplicación de autenticación",
+    "membership": "Membresía",
+    "gold": "Oro",
+    "silver": "Plata",
+    "bronze": "Bronce",
+    "rewards": "Recompensas",
+    "recharge": "Recargar",
+    "valid": "Valido hasta"
+  },
+  "rewards": {
+    "title": "Beneficios",
+    "subtitle": "Revisa los beneficios que puedes obtener",
+    "points": "Puntos",
+    "redeem": "Canjear",
+    "valid": "Valido hasta",
+    "drinks": "Bebidas",
+    "snacks": "Snacks",
+    "packs": "Paquetes de Playa"
   }
-  
+}
