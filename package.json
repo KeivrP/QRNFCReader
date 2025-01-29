@@ -20,6 +20,7 @@
     "expo": "~52.0.26",
     "expo-barcode-scanner": "^13.0.1",
     "expo-camera": "~16.0.14",
+    "expo-clipboard": "~7.0.1",
     "expo-document-picker": "~13.0.2",
     "expo-font": "~13.0.3",
     "expo-image-picker": "~16.0.4",

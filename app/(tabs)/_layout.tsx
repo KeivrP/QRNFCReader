@@ -14,6 +14,10 @@ export default function TabLayout() {
         name="one"
         options={{ headerShown: false }}
       />
+      <Stack.Screen
+        name="payments"
+        options={{ headerShown: false }}
+      />
     
     </Stack>
   );

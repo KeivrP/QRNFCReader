@@ -3,6 +3,7 @@ import { View, Text, StyleSheet, ImageBackground, Animated, Image, TouchableOpac
 import { useTranslation } from 'react-i18next';
 import { heightPercentageToDP } from 'react-native-responsive-screen';
 import { LinearGradient } from 'expo-linear-gradient';
+import CountdownTimer from './CountDownTimer';
 
 interface MembershipCardProps {
   type: 'bronze' | 'silver' | 'gold';
@@ -87,36 +88,37 @@ const MembershipCard = ({
     outputRange: ['0deg', '360deg'],
   });
 
-    // Animaciones
-    const shineAnimation = React.useRef(new Animated.Value(0)).current;
-    const pulseAnimation = React.useRef(new Animated.Value(1)).current;
-  
-    React.useEffect(() => {
-      // Animación de brillo
-      Animated.loop(
-        Animated.timing(shineAnimation, {
+  // Animaciones
+  const shineAnimation = React.useRef(new Animated.Value(0)).current;
+  const pulseAnimation = React.useRef(new Animated.Value(1)).current;
+
+  React.useEffect(() => {
+    // Animación de brillo
+    Animated.loop(
+      Animated.timing(shineAnimation, {
+        toValue: 1,
+        duration: 2000,
+        useNativeDriver: true,
+      })
+    ).start();
+
+    // Animación de pulso
+    Animated.loop(
+      Animated.sequence([
+        Animated.timing(pulseAnimation, {
+          toValue: 1.05,
+          duration: 1000,
+          useNativeDriver: true
+        }),
+        Animated.timing(pulseAnimation, {
           toValue: 1,
-          duration: 2000,
-          useNativeDriver: true,
+          duration: 1000,
+          useNativeDriver: true
         })
-      ).start();
-  
-      // Animación de pulso
-      Animated.loop(
-        Animated.sequence([
-          Animated.timing(pulseAnimation, {
-            toValue: 1.05,
-            duration: 1000,
-            useNativeDriver: true
-          }),
-          Animated.timing(pulseAnimation, {
-            toValue: 1,
-            duration: 1000,
-            useNativeDriver: true
-          })
-        ])
-      ).start();
-    }, []);
+      ])
+    ).start();
+  }, []);
+
 
 
   return (
@@ -144,10 +146,11 @@ const MembershipCard = ({
             <Text style={[styles.membershipNumber, { color: textSubtitleColor }]}>
               {membershipNumber}
             </Text>
-            
+
+<View style={{flexDirection: "column"}}/>
             <Animated.View style={[
               styles.typeContainer,
-              { 
+              {
                 backgroundColor: `${buttonColor}80`,
                 transform: [{ scale: pulseAnimation }]
               }
@@ -155,7 +158,8 @@ const MembershipCard = ({
               <Text style={[styles.typeText, { color: textColor }]}>
                 {t(`home.${type}`).toUpperCase()}
               </Text>
-              
+
+
               <Animated.View
                 style={{
                   position: 'absolute',
@@ -172,7 +176,9 @@ const MembershipCard = ({
                 />
               </Animated.View>
             </Animated.View>
+            
           </View>
+
 
           {/* Main Content */}
           {isSilver ? (
@@ -213,7 +219,7 @@ const MembershipCard = ({
           {/* Footer */}
           <View style={styles.footer}>
             <Text style={[styles.validUntil, { color: textSubtitleColor }]}>
-            {t("home.valid")} {validUntil}
+              {t("home.valid")} {validUntil}
             </Text>
           </View>
         </View>
